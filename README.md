@@ -51,3 +51,6 @@ bowtie -p 1 -l 8 -n 1 /bios-store1/arabidopsis_reference/bowtie1index_microRNA/a
 /bios-store1/program/subread-1.5.3-Linux-x86_64/bin/featureCounts -T 8 -t transcript -g transcript_id -a /bios-store2/wjy/miRNA-seq_analysis/dcl1-11/TG/Arabidopsis_thaliana.TAIR10.27_Chr_primicroRNA.gtf se_2_mature.sam -o se_2_mature.bam
 /bios-store1/program/subread-1.5.3-Linux-x86_64/bin/featureCounts -T 8 -t transcript -g transcript_id -a /bios-store2/wjy/miRNA-seq_analysis/dcl1-11/TG/Arabidopsis_thaliana.TAIR10.27_Chr_primicroRNA.gtf se_3_mature.sam -o se_3_mature.bam
 #计数结束，下一步用DEGseq分析差异表达
+
+
+2018年3月2日发现之前用bowtie比对的结果不是很好，今天都改用bowtie2尝试一下
